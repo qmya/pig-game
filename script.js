@@ -76,7 +76,7 @@ buttonHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
     console.log(`score--${activePlayer}.textContent = scores[activePlayer]`);
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 20) {
       playing = false;
       console.log(`current--${activePlayer} wins`);
       document
@@ -98,7 +98,7 @@ buttonReset.addEventListener('click', function () {
   score1El.textContent = 0;
   score2El.textContent = 0;
   CurrentPlayerScore1.textContent = 0;
-  CurrentPlayerScore1.textContent = 1;
+  CurrentPlayerScore1.textContent = 0;
   player0El.classList.add('player--active');
   player1El.classList.remove('player--active');
   player0El.classList.remove('player--winner');
